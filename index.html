@@ -1,11 +1,120 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio de Práctica: Sitio Web Responsive</title>
+    <title>Ejercicio de Práctica: Sitio Web Responsive (Individual)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+
 <body>
-    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">LOREM IPSUM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">dolor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">sit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">amet</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container text-center my-4">
+        <h1>Lorem ipsum...</h1>
+    </div>
+
+    <div id="miCarrusel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-inner">
+            <div class="carousel-item active text-center">
+                <h2>...dolor sit amet consectetur adipisicing elit</h2>
+            </div>
+            <div class="carousel-item text-center">
+                <h2>Esse dolorem suscipit molestiae error quia</h2>
+            </div>
+            <div class="carousel-item text-center">
+                <h2>veniam magni a in reiciendis ut</h2>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#miCarrusel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#miCarrusel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-4">
+                <!-- Dropdown para pantallas pequeñas -->
+                <div class="dropdown d-block d-md-none mb-3">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        Opciones
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">Opción 1</a></li>
+                        <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                        <li><a class="dropdown-item" href="#">Opción 3</a></li>
+                        <li><a class="dropdown-item" href="#">Opción 4</a></li>
+                    </ul>
+                </div>
+                <!-- Opciones para pantallas grandes -->
+                <div class="list-group d-none d-md-block">
+                    <a href="#" class="list-group-item list-group-item-action">Opción 1</a>
+                    <a href="#" class="list-group-item list-group-item-action">Opción 2</a>
+                    <a href="#" class="list-group-item list-group-item-action">Opción 3</a>
+                    <a href="#" class="list-group-item list-group-item-action">Opción 4</a>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="bg-light p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Donec vehicula ante eu elit dapibus, vel dignissim risus hendrerit.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="bg-light p-2">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="bg-light p-2">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="bg-light p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum cursus magna et dui accumsan, id facilisis nulla sodales.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="bg-light p-2">Integer at nisl consequat, lacinia velit sit amet, sagittis nunc. Etiam eget lorem in nisi maximus posuere ut sit amet ex.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="bg-light p-2">Sed vel sem sagittis, vestibulum lacus nec, tempus nunc. Phasellus et sapien nec risus pellentesque cursus sed a metus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

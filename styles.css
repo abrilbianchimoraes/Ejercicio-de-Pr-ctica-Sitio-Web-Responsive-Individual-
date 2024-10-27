@@ -1,0 +1,21 @@
+.carousel-item {
+    height: 300px;
+}
+
+.carousel-item h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.carousel-item p {
+    text-align: center;
+    /* Centrar el texto */
+    margin-top: 10px;
+}
+
+.text-center {
+    margin: 20px 0;
+}
+
